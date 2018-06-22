@@ -1,6 +1,5 @@
-package org.medmek;
+package chapters;
 
-import java.text.Collator;
 import java.text.Normalizer;
 import java.util.Arrays;
 import java.util.Random;
@@ -123,7 +122,7 @@ public class Chapter3 {
     private static void ignoreAccentEx() {
         System.out.println("*** Ignore Accents ***");
 
-        String strAccent = "Ã©";
+        String strAccent = "é";
         System.out.println("E".compareToIgnoreCase(strAccent)); // notEqual (Accents do sit at the grownups table)
         System.out.println("E".compareToIgnoreCase(
                 Normalizer.normalize(strAccent, Normalizer.Form.NFD)
@@ -132,7 +131,7 @@ public class Chapter3 {
 
     /**
      * Immutability
-     * Immutable is an object that canâ€™t be changed once itâ€™s created.
+     * Immutable is an object that can’t be changed once it’s created.
      * On the OCA exam, you need to know that String is immutable.
      */
     private static void immutabilityEx() {
